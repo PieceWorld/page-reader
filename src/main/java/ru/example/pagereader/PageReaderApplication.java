@@ -14,6 +14,6 @@ public class PageReaderApplication {
         extension.extension.add(".docx");
         extension.extension.add(".pdf");
         Search search = new Search();
-        search.testRoot(extension);
+        search.startSearch(extension);
     }
 }

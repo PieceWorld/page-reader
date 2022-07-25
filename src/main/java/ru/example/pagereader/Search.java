@@ -3,14 +3,17 @@ package ru.example.pagereader;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Search {
 
     Extension extension;
 
-    public void testRoot(Extension extension) {
+    public void startSearch(Extension extension) {
         this.extension = extension;
-        String src = "C:\\Users\\Admin\\Desktop\\TestPapka";
+        System.out.println("Введите путь к папке");
+        Scanner sc = new Scanner(System.in);
+        String src = sc.next();
         List<File> directories = new ArrayList<>();
         directories.add(new File(src));
         ArrayList<File> fileList = new ArrayList<>();
